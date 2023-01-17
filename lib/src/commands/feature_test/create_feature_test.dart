@@ -5,10 +5,9 @@ import 'package:args/command_runner.dart';
 import 'package:io/ansi.dart';
 import 'package:io/io.dart';
 import 'package:mason/mason.dart';
+import 'package:merlino/src/commands/commands.dart';
 import 'package:merlino/src/template/bundle/flutterFeatureTestBundle.dart';
 import 'package:meta/meta.dart';
-
-import '../commands.dart';
 
 final RegExp _identifierRegExp = RegExp('[a-z_][a-z0-9_]*');
 

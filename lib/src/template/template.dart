@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_string_escapes
+
 import 'dart:convert';
 import 'dart:io';
 
@@ -28,7 +30,7 @@ Future<void> generateTemplate(String root, String fileName) async {
 
   await File('lib/src/template/bundle/$fileName.dart').writeAsString(
     '''
-// ignore_for_file: prefer_single_quotes
+// ignore_for_file: prefer_single_quotes, file_names
 import \'package:mason/mason.dart\';
 
 final $fileName = MasonBundle.fromJson(${getPrettyJSONString(m)});
@@ -37,7 +39,7 @@ final $fileName = MasonBundle.fromJson(${getPrettyJSONString(m)});
 }
 
 String getPrettyJSONString(jsonObject) {
-  final encoder = const JsonEncoder.withIndent('    ');
+  const encoder = JsonEncoder.withIndent('    ');
   return encoder.convert(jsonObject);
 }
 

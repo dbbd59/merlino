@@ -5,14 +5,15 @@ import 'package:args/command_runner.dart';
 import 'package:io/io.dart';
 import 'package:mason/mason.dart';
 import 'package:merlino/src/commands/commands.dart';
-
-import '../version/version.dart';
+import 'package:merlino/src/version/version.dart';
 
 class Runner extends CommandRunner<int> {
   Runner({Logger? logger})
       : _logger = logger ?? Logger(),
-        super('merlino',
-            'Hockety pockety, wockety wack\nAbra, cabra, dabra, da') {
+        super(
+          'merlino',
+          'Hockety pockety, wockety wack\nAbra, cabra, dabra, da',
+        ) {
     argParser.addFlag(
       'version',
       negatable: false,

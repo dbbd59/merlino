@@ -76,7 +76,7 @@ class Run extends Command<int> {
     ];
 
     final yes = Confirm(
-      prompt: '${args.join(' ')}',
+      prompt: args.join(' '),
     ).interact();
 
     if (yes) {
