@@ -1,5 +1,5 @@
 name: merlino
-description: ""
+description: "CLI to bootstrap and generate boilerplate to work with bloc state managment"
 version: 1.0.0
 homepage: https://github.com/dbbd59/merlino
 
