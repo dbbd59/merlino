@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:mago_merlino/src/core/runner.dart';
+import 'package:merlino/src/core/runner.dart';
 
 void main(List<String> args) async {
   await _init(await Runner().run(args));

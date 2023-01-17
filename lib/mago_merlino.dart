@@ -1,1 +1,1 @@
-library mago_merlino;
+library merlino;

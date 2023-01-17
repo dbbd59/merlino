@@ -1,8 +1,8 @@
 import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
 import 'package:io/io.dart';
-import 'package:mago_merlino/src/template/template.dart';
 import 'package:mason/mason.dart';
+import 'package:merlino/src/template/template.dart';
 import 'package:meta/meta.dart';
 
 class UpdateFeature extends Command<int> {
@@ -22,7 +22,7 @@ class UpdateFeature extends Command<int> {
   String get name => 'update-feature';
 
   @override
-  String get invocation => 'mago_merlino update-feature';
+  String get invocation => 'merlino update-feature';
 
   @visibleForTesting
   ArgResults? argResultOverrides;

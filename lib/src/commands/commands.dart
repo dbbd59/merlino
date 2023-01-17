@@ -1,8 +1,8 @@
 import 'package:args/command_runner.dart';
 import 'package:interact/interact.dart';
 import 'package:io/io.dart';
-import 'package:mago_merlino/src/core/runner.dart';
 import 'package:mason/mason.dart';
+import 'package:merlino/src/core/runner.dart';
 
 export 'feature/create_feature.dart';
 export 'feature/update_feature.dart';
@@ -22,7 +22,7 @@ class Run extends Command<int> {
   String get name => 'run';
 
   @override
-  String get invocation => 'mago_merlino run';
+  String get invocation => 'merlino run';
 
   @override
   Future<int> run() async {

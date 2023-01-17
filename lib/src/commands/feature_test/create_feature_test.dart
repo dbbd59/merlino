@@ -4,8 +4,8 @@ import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
 import 'package:io/ansi.dart';
 import 'package:io/io.dart';
-import 'package:mago_merlino/src/template/bundle/flutterFeatureTestBundle.dart';
 import 'package:mason/mason.dart';
+import 'package:merlino/src/template/bundle/flutterFeatureTestBundle.dart';
 import 'package:meta/meta.dart';
 
 import '../commands.dart';
@@ -44,7 +44,7 @@ class CreateFeatureTest extends Command<int> {
   String get name => 'create-feature-test';
 
   @override
-  String get invocation => 'mago_merlino create-feature-test <feature name>';
+  String get invocation => 'merlino create-feature-test <feature name>';
 
   @visibleForTesting
   ArgResults? argResultOverrides;
