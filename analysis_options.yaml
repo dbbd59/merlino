@@ -1,0 +1,17 @@
+include: package:pedantic/analysis_options.yaml
+
+analyzer:
+  exclude: [lib/src/template/files/**]
+  errors:
+    unused_import: error
+
+linter:
+  rules:
+    avoid_relative_lib_imports: false
+    avoid_print: true
+    prefer_const_constructors: true
+    avoid_redundant_argument_values: true
+    prefer_final_locals: true
+    unnecessary_parenthesis: true
+    avoid_unnecessary_containers: true
+    await_only_futures: true
